@@ -24,12 +24,6 @@ getRollHist();
 getPattern();
 modeselect();
 
-//make sure csgopoly has jquery
-var script = document.createElement('script');
-script.src = 'http://code.jquery.com/jquery-1.12.3.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
 //betting methods
 function rainbowtrain() {
   setTimeout(function() {
