@@ -1,7 +1,7 @@
 // setup vars //
 var baseBet = 1; //your initial bet
 var mostlosses = 4; //max amount of losses you will take -set to 99 for no max loss-
-var mode = "rainbowtrain"; //rainbowtrain, rainbow, train, red, black
+var mode = "rainbowtrain"; //rainbowtrain, rainbow, train, red, black, green
 
 // The more complicated stuff, don't touch //
 var rolln1;
@@ -773,7 +773,7 @@ function betGreen(bet) {
 
 //get roll hist
 function getRollHist() {
-  rolln1 = $('#past div:last').text();
+  rolln1 = $('#past div:nth-child(10)').text();
   rolln2 = $('#past div:nth-child(9)').text();
   rolln3 = $('#past div:nth-child(8)').text();
   rolln4 = $('#past div:nth-child(7)').text();
